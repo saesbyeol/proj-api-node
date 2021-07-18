@@ -1,8 +1,10 @@
-
+import dotenv from 'dotenv'
 import axios from 'axios'
 
+dotenv.config();
+
 const WEATHER_API = "http://api.openweathermap.org/data/2.5/weather?q="
-const API_KEY = "e14769b10f7687bcb6e935077d0aaf90";
+const API_KEY = process.env.WEATHER_API_KEY;
 
 export default class WeatherService {
 
