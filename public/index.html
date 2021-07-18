@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- META -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- VENDORS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+     <!-- CSS -->
+     <link rel="stylesheet" href="assets/css/page.css">
+
+    <title>API</title>
+  </head>
+  <body class="text-center">
+    
+    <main class="form">
+      <form id="getInformations">
+        <h1 class="h3 mb-3 fw-normal">🌍 Welcome!</h1>
+
+        <div id="alert" class="alert alert-danger align-items-center" role="alert">
+            <i class="fas fa-exclamation-triangle"></i>
+            <div style="font-size: 14px; margin-left: 5px;">
+              😬 Oops, it looks like the term you've searched for doesn't exist!
+            </div>
+          </div>
+    
+        <div class="form-floating">
+            <select class="form-select" id="selectCity" aria-label="Floating label select example">
+              <option disabled selected>Select city</option>
+              <option value="Zagreb">Zagreb</option>
+              <option value="Berlin">Berlin</option>
+              <option value="Dravica">Dravica</option>
+            </select>
+            <label for="selectCity">City</label>
+          </div>
+
+        <button class="w-100 mt-2 btn btn-lg btn-primary" type="submit" disabled>Display</button>
+      </form>
+
+      <section class="mt-5" id="displyData">
+        <div class="form-floating">
+            <textarea class="form-control" id="txtAppend" style="height: 630px"></textarea>
+            <label for="txtAppend"></label>
+          </div>
+          
+      </section>
+
+    </main>
+        
+    <!-- VENDORS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+
+    <!-- JS -->
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
